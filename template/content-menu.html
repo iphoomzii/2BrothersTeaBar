@@ -1,0 +1,186 @@
+{% extends "base-navbar.html" %}
+{% block title %} Menu {% endblock %}
+{% block content %}
+<div class="container" style="text-align:center;">
+<div class="accordion pt-5 justify-content-center align-items-center" id="accordionExample">
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                <h3>เมนูชานม - Milk Tea</h3>
+            </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+
+                <div class="row align-middle my-5 d-flex flex-grow-1 justify-content-center align-items-center">
+                    <div class="col-md-6 text-right">
+                        <img src="{{url_for('static', filename='IMG-Milk-Tea.JPG')}}" width="360px" class="img-fluid"
+                            alt="image not found">
+                    </div>
+                    <div class="col-md-6 text-left">
+                        <div class="text-center">
+                            <h4>ชานมไต้หวัน</h4>
+                        </div>
+                    </div>
+                </div> 
+                
+                <div class="row align-middle my-5 d-flex flex-grow-1 justify-content-center align-items-center">
+                    <div class="col-md-6 text-right">
+                        <img src="{{url_for('static', filename='IMG-Thai-Tea.png')}}" width="360px" class="img-fluid"
+                            alt="image not found">
+                    </div>
+                    <div class="col-md-6 text-left">
+                        <div class="text-center">
+                            <h4>ชาไทย (ยังไม่มีรูป)</h4>
+                        </div>
+                    </div>
+                </div> 
+
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <h3>เมนูชาผลไม้ - Fruit Tea</h3>
+            </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <!-- adding menu here -->
+                <div class="row align-middle my-5 d-flex flex-grow-1 justify-content-center align-items-center">
+                    <div class="col-md-6 text-right">
+                        <img src="{{url_for('static', filename='IMG-Strawberry-Tea.JPG')}}" width="360px" class="img-fluid"
+                            alt="image not found">
+                    </div>
+                    <div class="col-md-6 text-left">
+                        <div class="text-center">
+                            <h4>ชาสตรอว์เบอร์รี่</h4>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="row align-middle my-5 d-flex flex-grow-1 justify-content-center align-items-center">
+                    <div class="col-md-6 text-right">
+                        <img src="{{url_for('static', filename='IMG-Kiwi-Tea.JPG')}}" width="360px" class="img-fluid"
+                            alt="image not found">
+                    </div>
+                    <div class="col-md-6 text-left">
+                        <div class="text-center">
+                            <h4>ชากีวี่</h4>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="row align-middle my-5 d-flex flex-grow-1 justify-content-center align-items-center">
+                    <div class="col-md-6 text-right">
+                        <img src="{{url_for('static', filename='IMG-Apple-Tea.JPG')}}" width="360px" class="img-fluid"
+                            alt="image not found">
+                    </div>
+                    <div class="col-md-6 text-left">
+                        <div class="text-center">
+                            <h4>ชาแอปเปิล</h4>
+                        </div>
+                    </div>
+                </div> 
+
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <h3>เมนูกาแฟ - Coffee</h3>
+            </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div class="row align-middle my-5 d-flex flex-grow-1 justify-content-center align-items-center">
+                    <div class="col-md-6 text-right">
+                        <img src="{{url_for('static', filename='IMG-Coffee.JPG')}}" width="360px" class="img-fluid"
+                            alt="กาแฟไม่มี">
+                    </div>
+                    <div class="col-md-6 text-left">
+                        <div class="text-center">
+                            <h4>มีแกได้ป้ะ</h4>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <h3>เมนูอื่นๆ - Other Beverage</h3>
+            </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div class="row align-middle my-5 d-flex flex-grow-1 justify-content-center align-items-center">
+                    <div class="col-md-6 text-right">
+                        <img src="{{url_for('static', filename='IMG-Milo.JPG')}}" width="360px" class="img-fluid"
+                            alt="image not found">
+                    </div>
+                    <div class="col-md-6 text-left">
+                        <div class="text-center">
+                            <h4>ไมโล</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-middle my-5 d-flex flex-grow-1 justify-content-center align-items-center">
+                    <div class="col-md-6 text-right">
+                        <img src="{{url_for('static', filename='IMG-Cocoa.JPG')}}" width="360px" class="img-fluid"
+                            alt="image not found">
+                    </div>
+                    <div class="col-md-6 text-left">
+                        <div class="text-center">
+                            <h4>โกโก้</h4>
+                        </div>
+                    </div>
+                </div>                 
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                <h3>ทอปปิ้ง - Topping</h3>
+            </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div class="row align-middle my-5 d-flex flex-grow-1 justify-content-center align-items-center">
+                    <div class="col-md-6 text-right">
+                        <img src="{{url_for('static', filename='IMG-Boba.JPG')}}" width="360px" class="img-fluid"
+                            alt="ยังไม่มีรูป">
+                    </div>
+                    <div class="col-md-6 text-left">
+                        <div class="text-center">
+                            <h4>สมมติว่าเป็นรูปไข่มุกสีดำๆ</h4>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+{% endblock %}

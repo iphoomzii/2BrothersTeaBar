@@ -1,18 +1,28 @@
 from flask import Flask, redirect, url_for, render_template
+from datetime import timedelta
 
-app = Flask(__name__, template_folder='template')
+app = Flask(__name__, template_folder='template', static_folder='static')
 
-@app.route("/<name>")
-def home(name):
-    return render_template("index.html", content=name, nameList = ['A', 'B', 'C'])
+@app.route("/")
+def homePage():
+    return render_template("home.html")
 
-# @app.route("/<name>")
-# def user(name):
-#     return f"hello {name}!"
+@app.route("/content")
+def contentPage():
+    return render_template("content.html")
 
-# @app.route("/admin")
-# def admin():
-#     return redirect(url_for("user", name="Admin"))
+@app.route("/menu")
+def menuPage():
+    return render_template("content-menu.html")
 
-if __name__ == "__mian__":
-    app.run(host='localhost', port=5000, debug=True)
+@app.route("/event")
+def eventPage():
+    return render_template("content-event.html")
+
+@app.route("/order")
+def orderPage():
+    return render_template("content-order.html")
+
+@app.route("/store")
+def storePage():
+    return render_template("content-store.html")

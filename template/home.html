@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Home - 2BrothersTeaBar</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
+</head>
+
+<body>
+
+    <div class="container pt-lg-5">
+        <div class="row align-middle d-flex flex-grow-1 justify-content-center align-items-center">
+            <div class="col-md-6 text-right">
+                <img src="{{url_for('static', filename='LOGO_สองพี่น้อง.png')}}" class="img-fluid"
+                    alt="image not found">
+            </div>
+            <div class="col-md-6 text-left">
+                <div class="text-center">
+                    <h1>2 Brothers Tea Bar</h1>
+                    <h3>สองพี่น้อง Tea Bar</h3>
+                    <h5>รับจัดงานเลี้ยงนอกสถานที่ และบริการเครื่องดื่มต่างๆ</h5>
+                    <p>73/1 หมู่ที่ 1 ตำบล พงสวาย <br> อำเภอ เมืองราชุบรี จังหวัดราชบุรี 70000 <br> Tel. 0863878997</p>
+                    <div class="btn-toolbar text-center" role="toolbar">
+                        <div class="btn-group btn-group-lg" role="group" aria-label="social media button group">
+                            <button type="button" class="btn btn-light btn-secondary" onclick="window.open('https://www.facebook.com/2BrothersTeaBar','_blank')"><ion-icon
+                                    name="logo-facebook"></ion-icon></button>
+                            <button type="button" class="btn btn-light btn-secondary" onclick="window.open('https://www.instagram.com/2brothers_teabar/','_blank')"><ion-icon
+                                    name="logo-instagram"></ion-icon></button>
+                            <button type="button" class="btn btn-light btn-secondary" onclick="window.open('https://goo.gl/maps/BfzUJAfMHwoKjvL67','_blank')"><ion-icon
+                                    name="location-outline"></ion-icon></button>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary mt-2" id="homePageBtn" href="{{ url_for('contentPage') }}"
+                        role="button">เข้าสู่เว็บไซต์</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

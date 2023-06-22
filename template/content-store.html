@@ -1,0 +1,22 @@
+{% extends "base-navbar.html" %}
+{% block title %} Store {% endblock %}
+{% block content %}
+<div class="container h-75 pt-lg-5">
+    <div class="row h-50 justify-content-center align-items-center">
+        <div class="col-md-6 text-right">
+            <img src="{{url_for('static', filename='IMG-Store.jpg')}}" class="img-fluid" alt="image not found" >
+        </div>
+        <div class="col-md-6 text-left">
+            <div class="container fit-con">
+                <div class="text-center">
+                    <h5>ร้านตั้งอยู่ที่ 73/1 หมู่ที่ 1 ตำบล พงสวาย อำเภอ เมือง <br>
+                    จังหวัด ราชบุรี 70000 (เข้าทางโตโยต้าเก่า โรงเรียนโยธิน) <br>
+                    หรือ กดเพื่อดูในแผนที่
+                    </h5>
+                    <a  class="btn btn-primary" id="homePageBtn" href="https://goo.gl/maps/QPzm25FSDL6G5SY38" target="_blank" role="button">กดเพื่อดูในแผนที่</a>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+{% endblock %}

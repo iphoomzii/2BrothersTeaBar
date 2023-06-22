@@ -1,0 +1,45 @@
+body {
+    background-color: antiquewhite;
+}
+
+body #homePageBtn {
+    background-color: darkolivegreen;
+    color: #fff;
+    border-color: darkolivegreen;
+    transition: all .3s;
+}
+
+body #homePageBtn:hover {
+    background-color: antiquewhite;
+    color: darkgreen;
+    border-color: darkolivegreen;
+}
+
+
+body #contentButton{
+    background-color: #fff;
+    color: darkolivegreen;
+    border-color: brown;
+    border-radius: 8px;
+    font-size: large;
+    font-weight: bold;
+    transition: all .3s;
+}
+
+body #contentButton:hover {
+    background-color: rgb(240, 236, 231);
+}
+
+body, html{
+    height:100%;
+}
+.btn-group-wrap {
+    text-align: center;
+}
+
+div.btn-group {
+    margin: 0 auto; 
+    text-align: center;
+    width: inherit;
+    display: inline-block;
+}
